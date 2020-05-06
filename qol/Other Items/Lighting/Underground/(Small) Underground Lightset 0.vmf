@@ -1,0 +1,1468 @@
+versioninfo
+{
+	"editorversion" "400"
+	"editorbuild" "8419"
+	"mapversion" "15"
+	"formatversion" "100"
+	"prefab" "0"
+}
+visgroups
+{
+}
+viewsettings
+{
+	"bSnapToGrid" "1"
+	"bShowGrid" "1"
+	"bShowLogicalGrid" "0"
+	"nGridSpacing" "4"
+	"bShow3DGrid" "0"
+}
+world
+{
+	"id" "1"
+	"mapversion" "15"
+	"classname" "worldspawn"
+	"detailmaterial" "detail/detailsprites"
+	"detailvbsp" "detail.vbsp"
+	"maxblobcount" "250"
+	"maxpropscreenwidth" "-1"
+	"skyname" "sky_black_nofog"
+	group
+	{
+		"id" "7615"
+		editor
+		{
+			"color" "218 107 0"
+			"groupid" "7785"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	group
+	{
+		"id" "7785"
+		editor
+		{
+			"color" "218 107 0"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	group
+	{
+		"id" "3"
+		editor
+		{
+			"color" "0 252 137"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	group
+	{
+		"id" "4"
+		editor
+		{
+			"color" "0 252 137"
+			"groupid" "3"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	group
+	{
+		"id" "1269"
+		editor
+		{
+			"color" "218 107 0"
+			"groupid" "7785"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	group
+	{
+		"id" "1342"
+		editor
+		{
+			"color" "218 107 0"
+			"groupid" "7785"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	group
+	{
+		"id" "5127"
+		editor
+		{
+			"color" "218 107 0"
+			"groupid" "7785"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+}
+entity
+{
+	"id" "5966"
+	"classname" "func_instance_io_proxy"
+	"targetname" "proxy"
+	connections
+	{
+		"OnProxyRelay" "lightrelay_offTrigger0-1"
+		"OnProxyRelay" "lightrelay_onTrigger0-1"
+	}
+	"origin" "192 -112 224"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "6164"
+	"classname" "logic_relay"
+	"angles" "0 0 0"
+	"startdisabled" "0"
+	"targetname" "lightrelay_off_silent"
+	connections
+	{
+		"OnTrigger" "lightglowHideSprite0-1"
+		"OnTrigger" "lightsourceTurnOff0-1"
+	}
+	"origin" "216 -88 224"
+	editor
+	{
+		"color" "0 100 250"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "6166"
+	"classname" "logic_relay"
+	"angles" "0 0 0"
+	"startdisabled" "0"
+	"targetname" "lightrelay_on_silent"
+	connections
+	{
+		"OnTrigger" "lightglowShowSprite0-1"
+		"OnTrigger" "lightsourceTurnOn0-1"
+	}
+	"origin" "216 -64 224"
+	editor
+	{
+		"color" "0 100 250"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "5"
+	"classname" "prop_static"
+	"angles" "0 180 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"model" "models/props_underground/gantry_256_a.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"skin" "0"
+	"solid" "6"
+	"origin" "0 -1.61094 -256"
+	editor
+	{
+		"color" "0 252 137"
+		"groupid" "4"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4500]"
+	}
+}
+entity
+{
+	"id" "9"
+	"classname" "prop_static"
+	"angles" "0 180 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"model" "models/props_underground/gantry_256_a.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"skin" "0"
+	"solid" "6"
+	"origin" "0 -1.61094 0"
+	editor
+	{
+		"color" "0 252 137"
+		"groupid" "4"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4500]"
+	}
+}
+entity
+{
+	"id" "13"
+	"classname" "prop_static"
+	"angles" "-15 180 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"model" "models/props_lights/light_array_underground.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"skin" "0"
+	"solid" "6"
+	"origin" "118.204 159.709 240.968"
+	editor
+	{
+		"color" "218 107 0"
+		"groupid" "7615"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4500]"
+	}
+}
+entity
+{
+	"id" "17"
+	"classname" "prop_static"
+	"angles" "0 180 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"model" "models/props_underground/gantry_256_a.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"skin" "0"
+	"solid" "6"
+	"origin" "0 -1.61094 256"
+	editor
+	{
+		"color" "0 252 137"
+		"groupid" "4"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4500]"
+	}
+}
+entity
+{
+	"id" "21"
+	"classname" "prop_static"
+	"angles" "-15 180 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"model" "models/props_lights/light_array_underground.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"skin" "0"
+	"solid" "6"
+	"origin" "120 8 240.968"
+	editor
+	{
+		"color" "218 107 0"
+		"groupid" "7615"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4500]"
+	}
+}
+entity
+{
+	"id" "29"
+	"classname" "prop_static"
+	"angles" "0 180 -90"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"model" "models/props_underground/truss_32_128.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"skin" "0"
+	"solid" "6"
+	"origin" "86.7504 127.704 248.968"
+	editor
+	{
+		"color" "218 107 0"
+		"groupid" "7615"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4500]"
+	}
+}
+entity
+{
+	"id" "33"
+	"classname" "prop_static"
+	"angles" "0 180 -90"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"model" "models/props_underground/truss_32_128.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"skin" "0"
+	"solid" "6"
+	"origin" "86.7503 -0.296398 248.968"
+	editor
+	{
+		"color" "218 107 0"
+		"groupid" "7615"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4500]"
+	}
+}
+entity
+{
+	"id" "37"
+	"classname" "prop_static"
+	"angles" "0 180 -90"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"model" "models/props_underground/truss_32_128.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"skin" "0"
+	"solid" "6"
+	"origin" "86.7504 -128.297 248.968"
+	editor
+	{
+		"color" "218 107 0"
+		"groupid" "7615"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4500]"
+	}
+}
+entity
+{
+	"id" "45"
+	"classname" "prop_static"
+	"angles" "75 180 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"model" "models/anim_wp/framework/squarebeam_off_2x2.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"skin" "0"
+	"solid" "6"
+	"origin" "102.752 7.701 245.109"
+	editor
+	{
+		"color" "218 107 0"
+		"groupid" "7615"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4500]"
+	}
+}
+entity
+{
+	"id" "49"
+	"classname" "prop_static"
+	"angles" "75 180 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"model" "models/anim_wp/framework/squarebeam_off_2x2.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"skin" "0"
+	"solid" "6"
+	"origin" "102.755 159.703 245.109"
+	editor
+	{
+		"color" "218 107 0"
+		"groupid" "7615"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4500]"
+	}
+}
+entity
+{
+	"id" "53"
+	"classname" "prop_static"
+	"angles" "0 180 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"model" "models/props_underground/gantry_256_a.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"skin" "0"
+	"solid" "6"
+	"origin" "0 -1.61094 -512"
+	editor
+	{
+		"color" "0 252 137"
+		"groupid" "3"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4500]"
+	}
+}
+entity
+{
+	"id" "109"
+	"classname" "env_sprite"
+	"angles" "0 315 0"
+	"disablex360" "0"
+	"framerate" "10.0"
+	"glowproxysize" "168"
+	"hdrcolorscale" "1.0"
+	"maxcpulevel" "0"
+	"maxgpulevel" "0"
+	"mincpulevel" "0"
+	"mingpulevel" "0"
+	"model" "sprites/glow04.vmt"
+	"renderamt" "100"
+	"rendercolor" "255 255 255"
+	"rendermode" "9"
+	"scale" "0.9"
+	"spawnflags" "1"
+	"targetname" "lightglow"
+	"origin" "115.706 7.7717 197.968"
+	editor
+	{
+		"color" "218 107 0"
+		"groupid" "1269"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 7000]"
+	}
+}
+entity
+{
+	"id" "113"
+	"classname" "env_sprite"
+	"angles" "0 315 0"
+	"disablex360" "0"
+	"framerate" "10.0"
+	"glowproxysize" "2"
+	"hdrcolorscale" "1.0"
+	"maxcpulevel" "0"
+	"maxgpulevel" "0"
+	"mincpulevel" "0"
+	"mingpulevel" "0"
+	"model" "sprites/glow04.vmt"
+	"renderamt" "100"
+	"rendercolor" "255 255 255"
+	"rendermode" "9"
+	"scale" "0.9"
+	"spawnflags" "1"
+	"targetname" "lightglow"
+	"origin" "116.413 -32.5334 197.968"
+	editor
+	{
+		"color" "218 107 0"
+		"groupid" "1269"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 7000]"
+	}
+}
+entity
+{
+	"id" "117"
+	"classname" "env_sprite"
+	"angles" "0 315 0"
+	"disablex360" "0"
+	"framerate" "10.0"
+	"glowproxysize" "2"
+	"hdrcolorscale" "1.0"
+	"maxcpulevel" "0"
+	"maxgpulevel" "0"
+	"mincpulevel" "0"
+	"mingpulevel" "0"
+	"model" "sprites/glow04.vmt"
+	"renderamt" "100"
+	"rendercolor" "255 255 255"
+	"rendermode" "9"
+	"scale" "0.9"
+	"spawnflags" "1"
+	"targetname" "lightglow"
+	"origin" "126.313 -32.5334 235.968"
+	editor
+	{
+		"color" "218 107 0"
+		"groupid" "1269"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 7000]"
+	}
+}
+entity
+{
+	"id" "121"
+	"classname" "env_sprite"
+	"angles" "0 315 0"
+	"disablex360" "0"
+	"framerate" "10.0"
+	"glowproxysize" "2"
+	"hdrcolorscale" "1.0"
+	"maxcpulevel" "0"
+	"maxgpulevel" "0"
+	"mincpulevel" "0"
+	"mingpulevel" "0"
+	"model" "sprites/glow04.vmt"
+	"renderamt" "100"
+	"rendercolor" "255 255 255"
+	"rendermode" "9"
+	"scale" "0.9"
+	"spawnflags" "1"
+	"targetname" "lightglow"
+	"origin" "127.02 48.7839 235.968"
+	editor
+	{
+		"color" "218 107 0"
+		"groupid" "1269"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 7000]"
+	}
+}
+entity
+{
+	"id" "125"
+	"classname" "env_sprite"
+	"angles" "0 315 0"
+	"disablex360" "0"
+	"framerate" "10.0"
+	"glowproxysize" "2"
+	"hdrcolorscale" "1.0"
+	"maxcpulevel" "0"
+	"maxgpulevel" "0"
+	"mincpulevel" "0"
+	"mingpulevel" "0"
+	"model" "sprites/glow04.vmt"
+	"renderamt" "100"
+	"rendercolor" "255 255 255"
+	"rendermode" "9"
+	"scale" "0.9"
+	"spawnflags" "1"
+	"targetname" "lightglow"
+	"origin" "114.292 48.7839 197.968"
+	editor
+	{
+		"color" "218 107 0"
+		"groupid" "1269"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 7000]"
+	}
+}
+entity
+{
+	"id" "129"
+	"classname" "env_sprite"
+	"angles" "0 315 0"
+	"disablex360" "0"
+	"framerate" "10.0"
+	"glowproxysize" "2"
+	"hdrcolorscale" "1.0"
+	"maxcpulevel" "0"
+	"maxgpulevel" "0"
+	"mincpulevel" "0"
+	"mingpulevel" "0"
+	"model" "sprites/glow04.vmt"
+	"renderamt" "100"
+	"rendercolor" "255 255 255"
+	"rendermode" "9"
+	"scale" "0.9"
+	"spawnflags" "1"
+	"targetname" "lightglow"
+	"origin" "127.02 7.7717 235.968"
+	editor
+	{
+		"color" "218 107 0"
+		"groupid" "1269"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 7000]"
+	}
+}
+entity
+{
+	"id" "133"
+	"classname" "env_sprite"
+	"angles" "0 315 0"
+	"disablex360" "0"
+	"framerate" "10.0"
+	"glowproxysize" "2"
+	"hdrcolorscale" "1.0"
+	"maxcpulevel" "0"
+	"maxgpulevel" "0"
+	"mincpulevel" "0"
+	"mingpulevel" "0"
+	"model" "sprites/glow04.vmt"
+	"renderamt" "100"
+	"rendercolor" "255 255 255"
+	"rendermode" "9"
+	"scale" "0.9"
+	"spawnflags" "1"
+	"targetname" "lightglow"
+	"origin" "136.212 48.0768 273.968"
+	editor
+	{
+		"color" "218 107 0"
+		"groupid" "1269"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 7000]"
+	}
+}
+entity
+{
+	"id" "137"
+	"classname" "env_sprite"
+	"angles" "0 315 0"
+	"disablex360" "0"
+	"framerate" "10.0"
+	"glowproxysize" "2"
+	"hdrcolorscale" "1.0"
+	"maxcpulevel" "0"
+	"maxgpulevel" "0"
+	"mincpulevel" "0"
+	"mingpulevel" "0"
+	"model" "sprites/glow04.vmt"
+	"renderamt" "100"
+	"rendercolor" "255 255 255"
+	"rendermode" "9"
+	"scale" "0.9"
+	"spawnflags" "1"
+	"targetname" "lightglow"
+	"origin" "135.505 -33.2405 273.968"
+	editor
+	{
+		"color" "218 107 0"
+		"groupid" "1269"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 7000]"
+	}
+}
+entity
+{
+	"id" "141"
+	"classname" "env_sprite"
+	"angles" "0 315 0"
+	"disablex360" "0"
+	"framerate" "10.0"
+	"glowproxysize" "2"
+	"hdrcolorscale" "1.0"
+	"maxcpulevel" "0"
+	"maxgpulevel" "0"
+	"mincpulevel" "0"
+	"mingpulevel" "0"
+	"model" "sprites/glow04.vmt"
+	"renderamt" "100"
+	"rendercolor" "255 255 255"
+	"rendermode" "9"
+	"scale" "0.9"
+	"spawnflags" "1"
+	"targetname" "lightglow"
+	"origin" "136.212 7.0646 273.968"
+	editor
+	{
+		"color" "218 107 0"
+		"groupid" "1269"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 7000]"
+	}
+}
+entity
+{
+	"id" "1197"
+	"classname" "prop_static"
+	"angles" "75 180 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"model" "models/anim_wp/framework/squarebeam_off_2x2.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"skin" "0"
+	"solid" "6"
+	"origin" "104 -152 245.109"
+	editor
+	{
+		"color" "218 107 0"
+		"groupid" "7785"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4500]"
+	}
+}
+entity
+{
+	"id" "1225"
+	"classname" "prop_static"
+	"angles" "-15 180 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"model" "models/props_lights/light_array_underground.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"skin" "0"
+	"solid" "6"
+	"origin" "116 -152 240.968"
+	editor
+	{
+		"color" "218 107 0"
+		"groupid" "7785"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4500]"
+	}
+}
+entity
+{
+	"id" "1343"
+	"classname" "env_sprite"
+	"angles" "0 315 0"
+	"disablex360" "0"
+	"framerate" "10.0"
+	"glowproxysize" "2"
+	"hdrcolorscale" "1.0"
+	"maxcpulevel" "0"
+	"maxgpulevel" "0"
+	"mincpulevel" "0"
+	"mingpulevel" "0"
+	"model" "sprites/glow04.vmt"
+	"renderamt" "100"
+	"rendercolor" "255 255 255"
+	"rendermode" "9"
+	"scale" "0.9"
+	"spawnflags" "0"
+	"targetname" "lightglow"
+	"origin" "139.505 -193.24 273.968"
+	editor
+	{
+		"color" "218 107 0"
+		"groupid" "1342"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 7000]"
+	}
+}
+entity
+{
+	"id" "1347"
+	"classname" "env_sprite"
+	"angles" "0 315 0"
+	"disablex360" "0"
+	"framerate" "10.0"
+	"glowproxysize" "2"
+	"hdrcolorscale" "1.0"
+	"maxcpulevel" "0"
+	"maxgpulevel" "0"
+	"mincpulevel" "0"
+	"mingpulevel" "0"
+	"model" "sprites/glow04.vmt"
+	"renderamt" "100"
+	"rendercolor" "255 255 255"
+	"rendermode" "9"
+	"scale" "0.9"
+	"spawnflags" "0"
+	"targetname" "lightglow"
+	"origin" "140.212 -152.935 273.968"
+	editor
+	{
+		"color" "218 107 0"
+		"groupid" "1342"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 7000]"
+	}
+}
+entity
+{
+	"id" "1351"
+	"classname" "env_sprite"
+	"angles" "0 315 0"
+	"disablex360" "0"
+	"framerate" "10.0"
+	"glowproxysize" "2"
+	"hdrcolorscale" "1.0"
+	"maxcpulevel" "0"
+	"maxgpulevel" "0"
+	"mincpulevel" "0"
+	"mingpulevel" "0"
+	"model" "sprites/glow04.vmt"
+	"renderamt" "100"
+	"rendercolor" "255 255 255"
+	"rendermode" "9"
+	"scale" "0.9"
+	"spawnflags" "0"
+	"targetname" "lightglow"
+	"origin" "140.212 -111.923 273.968"
+	editor
+	{
+		"color" "218 107 0"
+		"groupid" "1342"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 7000]"
+	}
+}
+entity
+{
+	"id" "1355"
+	"classname" "env_sprite"
+	"angles" "0 315 0"
+	"disablex360" "0"
+	"framerate" "10.0"
+	"glowproxysize" "2"
+	"hdrcolorscale" "1.0"
+	"maxcpulevel" "0"
+	"maxgpulevel" "0"
+	"mincpulevel" "0"
+	"mingpulevel" "0"
+	"model" "sprites/glow04.vmt"
+	"renderamt" "100"
+	"rendercolor" "255 255 255"
+	"rendermode" "9"
+	"scale" "0.9"
+	"spawnflags" "0"
+	"targetname" "lightglow"
+	"origin" "130.313 -192.533 235.968"
+	editor
+	{
+		"color" "218 107 0"
+		"groupid" "1342"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 7000]"
+	}
+}
+entity
+{
+	"id" "1359"
+	"classname" "env_sprite"
+	"angles" "0 315 0"
+	"disablex360" "0"
+	"framerate" "10.0"
+	"glowproxysize" "2"
+	"hdrcolorscale" "1.0"
+	"maxcpulevel" "0"
+	"maxgpulevel" "0"
+	"mincpulevel" "0"
+	"mingpulevel" "0"
+	"model" "sprites/glow04.vmt"
+	"renderamt" "100"
+	"rendercolor" "255 255 255"
+	"rendermode" "9"
+	"scale" "0.9"
+	"spawnflags" "0"
+	"targetname" "lightglow"
+	"origin" "131.02 -152.228 235.968"
+	editor
+	{
+		"color" "218 107 0"
+		"groupid" "1342"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 7000]"
+	}
+}
+entity
+{
+	"id" "1363"
+	"classname" "env_sprite"
+	"angles" "0 315 0"
+	"disablex360" "0"
+	"framerate" "10.0"
+	"glowproxysize" "2"
+	"hdrcolorscale" "1.0"
+	"maxcpulevel" "0"
+	"maxgpulevel" "0"
+	"mincpulevel" "0"
+	"mingpulevel" "0"
+	"model" "sprites/glow04.vmt"
+	"renderamt" "100"
+	"rendercolor" "255 255 255"
+	"rendermode" "9"
+	"scale" "0.9"
+	"spawnflags" "0"
+	"targetname" "lightglow"
+	"origin" "131.02 -111.216 235.968"
+	editor
+	{
+		"color" "218 107 0"
+		"groupid" "1342"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 7000]"
+	}
+}
+entity
+{
+	"id" "1367"
+	"classname" "env_sprite"
+	"angles" "0 315 0"
+	"disablex360" "0"
+	"framerate" "10.0"
+	"glowproxysize" "2"
+	"hdrcolorscale" "1.0"
+	"maxcpulevel" "0"
+	"maxgpulevel" "0"
+	"mincpulevel" "0"
+	"mingpulevel" "0"
+	"model" "sprites/glow04.vmt"
+	"renderamt" "100"
+	"rendercolor" "255 255 255"
+	"rendermode" "9"
+	"scale" "0.9"
+	"spawnflags" "0"
+	"targetname" "lightglow"
+	"origin" "118.292 -111.216 197.968"
+	editor
+	{
+		"color" "218 107 0"
+		"groupid" "1342"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 7000]"
+	}
+}
+entity
+{
+	"id" "1371"
+	"classname" "env_sprite"
+	"angles" "0 315 0"
+	"disablex360" "0"
+	"framerate" "10.0"
+	"glowproxysize" "2"
+	"hdrcolorscale" "1.0"
+	"maxcpulevel" "0"
+	"maxgpulevel" "0"
+	"mincpulevel" "0"
+	"mingpulevel" "0"
+	"model" "sprites/glow04.vmt"
+	"renderamt" "100"
+	"rendercolor" "255 255 255"
+	"rendermode" "9"
+	"scale" "0.9"
+	"spawnflags" "0"
+	"targetname" "lightglow"
+	"origin" "119.706 -152.228 197.968"
+	editor
+	{
+		"color" "218 107 0"
+		"groupid" "1342"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 7000]"
+	}
+}
+entity
+{
+	"id" "1375"
+	"classname" "env_sprite"
+	"angles" "0 315 0"
+	"disablex360" "0"
+	"framerate" "10.0"
+	"glowproxysize" "2"
+	"hdrcolorscale" "1.0"
+	"maxcpulevel" "0"
+	"maxgpulevel" "0"
+	"mincpulevel" "0"
+	"mingpulevel" "0"
+	"model" "sprites/glow04.vmt"
+	"renderamt" "100"
+	"rendercolor" "255 255 255"
+	"rendermode" "9"
+	"scale" "0.9"
+	"spawnflags" "0"
+	"targetname" "lightglow"
+	"origin" "120.413 -192.533 197.968"
+	editor
+	{
+		"color" "218 107 0"
+		"groupid" "1342"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 7000]"
+	}
+}
+entity
+{
+	"id" "5128"
+	"classname" "env_sprite"
+	"angles" "0 315 0"
+	"disablex360" "0"
+	"framerate" "10.0"
+	"glowproxysize" "2"
+	"hdrcolorscale" "1.0"
+	"maxcpulevel" "0"
+	"maxgpulevel" "0"
+	"mincpulevel" "0"
+	"mingpulevel" "0"
+	"model" "sprites/glow04.vmt"
+	"renderamt" "100"
+	"rendercolor" "255 255 255"
+	"rendermode" "9"
+	"scale" "0.9"
+	"spawnflags" "1"
+	"targetname" "lightglow"
+	"origin" "135.505 118.759 273.968"
+	editor
+	{
+		"color" "218 107 0"
+		"groupid" "5127"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 7000]"
+	}
+}
+entity
+{
+	"id" "5132"
+	"classname" "env_sprite"
+	"angles" "0 315 0"
+	"disablex360" "0"
+	"framerate" "10.0"
+	"glowproxysize" "2"
+	"hdrcolorscale" "1.0"
+	"maxcpulevel" "0"
+	"maxgpulevel" "0"
+	"mincpulevel" "0"
+	"mingpulevel" "0"
+	"model" "sprites/glow04.vmt"
+	"renderamt" "100"
+	"rendercolor" "255 255 255"
+	"rendermode" "9"
+	"scale" "0.9"
+	"spawnflags" "1"
+	"targetname" "lightglow"
+	"origin" "136.212 159.065 273.968"
+	editor
+	{
+		"color" "218 107 0"
+		"groupid" "5127"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 7000]"
+	}
+}
+entity
+{
+	"id" "5136"
+	"classname" "env_sprite"
+	"angles" "0 315 0"
+	"disablex360" "0"
+	"framerate" "10.0"
+	"glowproxysize" "2"
+	"hdrcolorscale" "1.0"
+	"maxcpulevel" "0"
+	"maxgpulevel" "0"
+	"mincpulevel" "0"
+	"mingpulevel" "0"
+	"model" "sprites/glow04.vmt"
+	"renderamt" "100"
+	"rendercolor" "255 255 255"
+	"rendermode" "9"
+	"scale" "0.9"
+	"spawnflags" "1"
+	"targetname" "lightglow"
+	"origin" "136.212 200.077 273.968"
+	editor
+	{
+		"color" "218 107 0"
+		"groupid" "5127"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 7000]"
+	}
+}
+entity
+{
+	"id" "5140"
+	"classname" "env_sprite"
+	"angles" "0 315 0"
+	"disablex360" "0"
+	"framerate" "10.0"
+	"glowproxysize" "2"
+	"hdrcolorscale" "1.0"
+	"maxcpulevel" "0"
+	"maxgpulevel" "0"
+	"mincpulevel" "0"
+	"mingpulevel" "0"
+	"model" "sprites/glow04.vmt"
+	"renderamt" "100"
+	"rendercolor" "255 255 255"
+	"rendermode" "9"
+	"scale" "0.9"
+	"spawnflags" "1"
+	"targetname" "lightglow"
+	"origin" "126.313 119.467 235.968"
+	editor
+	{
+		"color" "218 107 0"
+		"groupid" "5127"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 7000]"
+	}
+}
+entity
+{
+	"id" "5144"
+	"classname" "env_sprite"
+	"angles" "0 315 0"
+	"disablex360" "0"
+	"framerate" "10.0"
+	"glowproxysize" "2"
+	"hdrcolorscale" "1.0"
+	"maxcpulevel" "0"
+	"maxgpulevel" "0"
+	"mincpulevel" "0"
+	"mingpulevel" "0"
+	"model" "sprites/glow04.vmt"
+	"renderamt" "100"
+	"rendercolor" "255 255 255"
+	"rendermode" "9"
+	"scale" "0.9"
+	"spawnflags" "1"
+	"targetname" "lightglow"
+	"origin" "127.02 159.772 235.968"
+	editor
+	{
+		"color" "218 107 0"
+		"groupid" "5127"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 7000]"
+	}
+}
+entity
+{
+	"id" "5148"
+	"classname" "env_sprite"
+	"angles" "0 315 0"
+	"disablex360" "0"
+	"framerate" "10.0"
+	"glowproxysize" "2"
+	"hdrcolorscale" "1.0"
+	"maxcpulevel" "0"
+	"maxgpulevel" "0"
+	"mincpulevel" "0"
+	"mingpulevel" "0"
+	"model" "sprites/glow04.vmt"
+	"renderamt" "100"
+	"rendercolor" "255 255 255"
+	"rendermode" "9"
+	"scale" "0.9"
+	"spawnflags" "1"
+	"targetname" "lightglow"
+	"origin" "127.02 200.784 235.968"
+	editor
+	{
+		"color" "218 107 0"
+		"groupid" "5127"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 7000]"
+	}
+}
+entity
+{
+	"id" "5152"
+	"classname" "env_sprite"
+	"angles" "0 315 0"
+	"disablex360" "0"
+	"framerate" "10.0"
+	"glowproxysize" "2"
+	"hdrcolorscale" "1.0"
+	"maxcpulevel" "0"
+	"maxgpulevel" "0"
+	"mincpulevel" "0"
+	"mingpulevel" "0"
+	"model" "sprites/glow04.vmt"
+	"renderamt" "100"
+	"rendercolor" "255 255 255"
+	"rendermode" "9"
+	"scale" "0.9"
+	"spawnflags" "1"
+	"targetname" "lightglow"
+	"origin" "114.292 200.784 197.968"
+	editor
+	{
+		"color" "218 107 0"
+		"groupid" "5127"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 7000]"
+	}
+}
+entity
+{
+	"id" "5156"
+	"classname" "env_sprite"
+	"angles" "0 315 0"
+	"disablex360" "0"
+	"framerate" "10.0"
+	"glowproxysize" "2"
+	"hdrcolorscale" "1.0"
+	"maxcpulevel" "0"
+	"maxgpulevel" "0"
+	"mincpulevel" "0"
+	"mingpulevel" "0"
+	"model" "sprites/glow04.vmt"
+	"renderamt" "100"
+	"rendercolor" "255 255 255"
+	"rendermode" "9"
+	"scale" "0.9"
+	"spawnflags" "1"
+	"targetname" "lightglow"
+	"origin" "115.706 159.772 197.968"
+	editor
+	{
+		"color" "218 107 0"
+		"groupid" "5127"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 7000]"
+	}
+}
+entity
+{
+	"id" "5160"
+	"classname" "env_sprite"
+	"angles" "0 315 0"
+	"disablex360" "0"
+	"framerate" "10.0"
+	"glowproxysize" "2"
+	"hdrcolorscale" "1.0"
+	"maxcpulevel" "0"
+	"maxgpulevel" "0"
+	"mincpulevel" "0"
+	"mingpulevel" "0"
+	"model" "sprites/glow04.vmt"
+	"renderamt" "100"
+	"rendercolor" "255 255 255"
+	"rendermode" "9"
+	"scale" "0.9"
+	"spawnflags" "1"
+	"targetname" "lightglow"
+	"origin" "116.413 119.467 197.968"
+	editor
+	{
+		"color" "218 107 0"
+		"groupid" "5127"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 7000]"
+	}
+}
+entity
+{
+	"id" "5348"
+	"classname" "ambient_generic"
+	"angles" "0 0 0"
+	"cspinup" "0"
+	"fadeinsecs" "0"
+	"fadeoutsecs" "0"
+	"health" "10"
+	"lfomodpitch" "0"
+	"lfomodvol" "0"
+	"lforate" "0"
+	"lfotype" "0"
+	"message" "World.LightFlickerPowerOn"
+	"pitch" "100"
+	"pitchstart" "100"
+	"preset" "0"
+	"radius" "1250"
+	"spawnflags" "48"
+	"spindown" "0"
+	"spinup" "0"
+	"targetname" "lightsound"
+	"volstart" "0"
+	"origin" "192 -40 224"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "5375"
+	"classname" "light_spot"
+	"_cone" "60"
+	"_constant_attn" "1"
+	"_distance" "0"
+	"_exponent" "1"
+	"_hardfalloff" "0"
+	"_inner_cone" "40"
+	"_light" "255 255 255 255"
+	"_lighthdr" "-1 -1 -1 1"
+	"_lightscalehdr" "1"
+	"_linear_attn" "1"
+	"_quadratic_attn" "0"
+	"angles" "-35 0 0"
+	"pitch" "-35"
+	"spawnflags" "1"
+	"style" "0"
+	"targetname" "lightsource"
+	"origin" "164 164 236"
+	editor
+	{
+		"color" "218 107 0"
+		"groupid" "7785"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "5441"
+	"classname" "light_spot"
+	"_cone" "60"
+	"_constant_attn" "1"
+	"_distance" "0"
+	"_exponent" "1"
+	"_hardfalloff" "0"
+	"_inner_cone" "40"
+	"_light" "255 255 255 255"
+	"_lighthdr" "-1 -1 -1 1"
+	"_lightscalehdr" "1"
+	"_linear_attn" "1"
+	"_quadratic_attn" "0"
+	"angles" "-35 0 0"
+	"pitch" "-35"
+	"spawnflags" "1"
+	"style" "0"
+	"targetname" "lightsource"
+	"origin" "164 12 236"
+	editor
+	{
+		"color" "218 107 0"
+		"groupid" "7785"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "5462"
+	"classname" "light_spot"
+	"_cone" "60"
+	"_constant_attn" "1"
+	"_distance" "0"
+	"_exponent" "1"
+	"_hardfalloff" "0"
+	"_inner_cone" "40"
+	"_light" "255 255 255 255"
+	"_lighthdr" "-1 -1 -1 1"
+	"_lightscalehdr" "1"
+	"_linear_attn" "1"
+	"_quadratic_attn" "0"
+	"angles" "-35 0 0"
+	"pitch" "-35"
+	"spawnflags" "1"
+	"style" "0"
+	"targetname" "lightsource"
+	"origin" "164 -156 236"
+	editor
+	{
+		"color" "218 107 0"
+		"groupid" "7785"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "5784"
+	"classname" "logic_relay"
+	"angles" "0 0 0"
+	"startdisabled" "0"
+	"targetname" "lightrelay_on"
+	connections
+	{
+		"OnTrigger" "lightglowShowSprite0-1"
+		"OnTrigger" "lightsoundPlaySound0-1"
+		"OnTrigger" "lightsourceTurnOn0-1"
+	}
+	"origin" "192 -64 224"
+	editor
+	{
+		"color" "0 100 250"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "5799"
+	"classname" "logic_relay"
+	"angles" "0 0 0"
+	"startdisabled" "0"
+	"targetname" "lightrelay_off"
+	connections
+	{
+		"OnTrigger" "lightglowHideSprite0-1"
+		"OnTrigger" "lightsound_offPlaySound0-1"
+		"OnTrigger" "lightsourceTurnOff0-1"
+	}
+	"origin" "192 -88 224"
+	editor
+	{
+		"color" "0 100 250"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "5807"
+	"classname" "ambient_generic"
+	"angles" "0 0 0"
+	"cspinup" "0"
+	"fadeinsecs" "0"
+	"fadeoutsecs" "0"
+	"health" "10"
+	"lfomodpitch" "0"
+	"lfomodvol" "0"
+	"lforate" "0"
+	"lfotype" "0"
+	"message" "World.LightPowerOff"
+	"pitch" "100"
+	"pitchstart" "100"
+	"preset" "0"
+	"radius" "1250"
+	"spawnflags" "48"
+	"spindown" "0"
+	"spinup" "0"
+	"targetname" "lightsound_off"
+	"volstart" "0"
+	"origin" "208 -40 224"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+cameras
+{
+	"activecamera" "-1"
+}
+cordons
+{
+	"active" "0"
+}
