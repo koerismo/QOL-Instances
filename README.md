@@ -6,10 +6,10 @@ Including but not limited to...
 - Entrance/Exit Instances
 - Styled Lighting Instances
 - Decoration
-- |   Cutout Tiles
-- |   Broken Ceiling
-- |   Broken Walls (coming soon)
+- |- Cutout Tiles
+- |- Broken Ceiling
+- |- Broken Walls (coming soon)
 - Tweaked Test Elements
--    | Less unreasonably messy items
+- |- Less unreasonably messy items
 - New Test Elements
 - I might add my fixed elevator instance
